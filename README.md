@@ -77,4 +77,4 @@ Hi, I'm Somto (pronounced: sum-toe). I combine **product management, AI, and ana
 ---
 
 ## 📫 Connect with Me
-[LinkedIn](#) | [Email](#) | [GitHub](#)
+[LinkedIn](www.linkedin.com/in/somto-egboga) | [Email](#) | [GitHub](#)
