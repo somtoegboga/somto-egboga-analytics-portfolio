@@ -1,9 +1,9 @@
 # Somto Egboga - AI, Analytics & Product Portfolio
 
-This repository showcases **AI-enhanced product analytics projects**, demonstrating skills in **product management, data analysis, AI modeling, and dashboarding**.
+This portfolio showcases **AI-enhanced product analytics projects**, demonstrating skills in **product management, data analysis, AI modeling, and dashboarding**.
 
 ## 🚀 About Me
-I combine **product management, AI, and analytics skills** to solve real-world business problems. I design dashboards, build predictive models, and turn insights into **actionable product decisions**.
+Hi, I'm Somto (pronounced: sum-toe). I combine **product management, AI, and analytics skills** to solve real-world business problems. I design dashboards, build predictive models, and turn insights into **actionable product decisions**.
 
 ---
 
