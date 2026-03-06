@@ -69,12 +69,5 @@ Hi, I'm Somto (pronounced: sum-toe). I combine **product management, AI, and ana
 
 ---
 
-## 💡 Key Takeaways
-- **AI + Product Analytics:** Each project integrates predictive modeling, segmentation, and actionable insights  
-- **Business Impact:** Projects highlight metrics, KPIs, and decisions that affect growth, retention, and revenue  
-- **Portfolio Ready:** Recruiters can immediately see skills, outputs, and business relevance  
-
----
-
 ## 📫 Connect with Me
 [LinkedIn](www.linkedin.com/in/somto-egboga) | [Email](#) | [GitHub](#)
