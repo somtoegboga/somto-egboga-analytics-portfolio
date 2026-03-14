@@ -31,20 +31,23 @@ orders as (
 ),
 
 /* this is creating a cte from the orders table to calculate aggregrates for the customer*/
-customer_orders as (
+customer_orders_w_payments as (
 
     select
-        customer_id,
+        o.customer_id,
 
-        min(order_date) as first_order_date,
-        max(order_date) as most_recent_order_date,
-        count(order_id) as number_of_orders
+        min(o.order_date) as first_order_date,
+        max(o.order_date) as most_recent_order_date,
+        count(fo.order_id) as number_of_orders,
+        sum(fo.completed_amount) as lifetime_value
 
-    from orders
+    from orders o
+    left join {{ ref('fct_orders') }} fo using (order_id)
 
-    group by 1
+    group by o.customer_id
 
 ),
+
 
 /* this is creating a cte that maps the customer details like their 
 name to their order aggregrate details*/
@@ -55,13 +58,14 @@ final as (
         customers.customer_id,
         customers.first_name,
         customers.last_name,
-        customer_orders.first_order_date,
-        customer_orders.most_recent_order_date,
-        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+        cowp.first_order_date,
+        cowp.most_recent_order_date,
+        coalesce(cowp.number_of_orders, 0) as number_of_orders,
+        cowp.lifetime_value
 
     from customers
 
-    left join customer_orders using (customer_id)
+    left join customer_orders_w_payments cowp using (customer_id)
 
 )
 
