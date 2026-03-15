@@ -1,6 +1,3 @@
-# building tests
-# good first test is a unique and not null test on primary keys
-
 models:
   - name: stg_jaffle_shop_customers
     columns:
@@ -8,7 +5,9 @@ models:
         data_tests:
           - unique
           - not_null
-  
+      - name: first_name
+      - name: last_name
+
   - name: stg_jaffle_shop_orders
     columns:
       - name: order_id
@@ -28,5 +27,3 @@ models:
               arguments: 
                 to: ref('stg_jaffle_shop_customers')
                 field: customer_id
-          
-          
