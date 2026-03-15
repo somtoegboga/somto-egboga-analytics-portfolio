@@ -2,9 +2,21 @@ sources:
   - name: jaffle_shop # this is the name you want to refer to this source as when you reference it
     database: raw  
     schema: jaffle_shop  
+      # for source freshness
+    config:
+      freshness:
+        #warn_after: # when dbt will give a warning that the data is getting stale
+          #count: 6
+          #period: hour
+        error_after: # when dbt will throw up an error that the data is critically outdated
+          count: 1
+          period: day
+      loaded_at_field: _etl_loaded_at # column dbt will use to check the last load time
     tables:
       - name: orders
       - name: customers
+        config:
+          freshness: null # because the loaded at field columns doesnt exist here
 
   - name: stripe # this is the name you want to refer to this source as when you reference it
     database: raw 
