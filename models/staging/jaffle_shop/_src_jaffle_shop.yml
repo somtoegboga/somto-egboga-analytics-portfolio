@@ -14,7 +14,19 @@ sources:
       loaded_at_field: _etl_loaded_at # column dbt will use to check the last load time
     tables:
       - name: orders
+        columns:
+          - name: id 
+            data_tests:
+              - unique 
+              - not_null
+              
       - name: customers
+        columns:
+          - name: id 
+            data_tests:
+              - unique
+              - not_null
+              
         config:
           freshness: null # because the loaded at field columns doesnt exist here
 
@@ -23,6 +35,11 @@ sources:
     schema: stripe
     tables:
       - name: payment
+        columns:
+          - name: id 
+            data_tests:
+              - unique
+              - not_null 
         config:
           freshness:
             warn_after:

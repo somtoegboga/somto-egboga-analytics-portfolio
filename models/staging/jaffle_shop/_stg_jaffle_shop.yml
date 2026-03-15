@@ -30,4 +30,3 @@ models:
                 field: customer_id
           
           
-  #- name: stg_stripe_payments
