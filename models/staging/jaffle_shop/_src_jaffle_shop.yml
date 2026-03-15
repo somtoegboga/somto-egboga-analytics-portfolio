@@ -2,6 +2,7 @@ sources:
   - name: jaffle_shop # this is the name you want to refer to this source as when you reference it
     database: raw  
     schema: jaffle_shop  
+    description: a clone of a postgress application database
       # for source freshness
     config:
       freshness:
@@ -14,15 +15,19 @@ sources:
       loaded_at_field: _etl_loaded_at # column dbt will use to check the last load time
     tables:
       - name: orders
+        description: raw orders data
         columns:
           - name: id 
+            description: primary key for the orders table
             data_tests:
               - unique 
               - not_null
               
       - name: customers
+        description: raw customers data
         columns:
           - name: id 
+            description: primary key for the customers data
             data_tests:
               - unique
               - not_null
@@ -33,10 +38,12 @@ sources:
   - name: stripe # this is the name you want to refer to this source as when you reference it
     database: raw 
     schema: stripe
+    description: this is a clone of a postgress application database
     tables:
       - name: payment
         columns:
           - name: id 
+            description: primary key for the payment data
             data_tests:
               - unique
               - not_null 
