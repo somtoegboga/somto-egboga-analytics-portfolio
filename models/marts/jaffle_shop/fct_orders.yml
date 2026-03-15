@@ -1,0 +1,17 @@
+models:
+  - name: fct_orders
+    description: This model provides a comprehensive view of orders, including details about the order ID, customer ID, and the completed amount. It is used to analyze order transactions and customer purchasing behavior.
+    columns:
+      - name: order_id
+        description: A unique identifier for each order.
+        data_tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: The identifier for the customer who placed the order.
+        data_tests:
+          - not_null
+      - name: completed_amount
+        description: The total amount for the completed order.
+        data_tests:
+          - not_null
