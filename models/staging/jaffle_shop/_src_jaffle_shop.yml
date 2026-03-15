@@ -1,0 +1,13 @@
+sources:
+  - name: jaffle_shop # this is the name you want to refer to this source as when you reference it
+    database: raw  
+    schema: jaffle_shop  
+    tables:
+      - name: orders
+      - name: customers
+
+  - name: stripe # this is the name you want to refer to this source as when you reference it
+    database: raw 
+    schema: stripe
+    tables:
+      - name: payments
