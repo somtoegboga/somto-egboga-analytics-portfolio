@@ -10,4 +10,5 @@ select
 
 
 
-from raw.stripe.payment
+/*from raw.stripe.payment*/
+from {{ source('stripe', 'payment') }}
