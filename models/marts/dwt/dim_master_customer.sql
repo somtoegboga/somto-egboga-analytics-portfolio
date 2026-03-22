@@ -24,9 +24,10 @@ final as (
         CONCAT(CAST(f_score AS VARCHAR),CAST(m_score AS VARCHAR)) as fm_score,
 
         case 
-            when fm_score in ('44', '43', '33', '34') then 'Champion'
-            when fm_score in ('41', '42', '31', '32') then 'Barnacles'
-            when fm_score in ('13', '14', '23', '24') then 'Butterfly'
+            when fm_score in ('44') then 'Champion'
+            when fm_score in ('33') then 'Neutral'
+            when fm_score in ('41', '42', '43','31', '32') then 'Barnacles'
+            when fm_score in ('13', '14', '23', '24', '34') then 'Butterfly'
             when fm_score in ('11', '12', '21', '22') then 'Risky'
         end as customer_segment
     
