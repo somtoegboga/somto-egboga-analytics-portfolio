@@ -1,0 +1,16 @@
+sources:
+  - name: dwt 
+    database: raw 
+    schema: digital_wallet_transactions 
+    description: precleaned digital wallet transactions data from kaggle
+    tables:
+      - name: dwt 
+        description:
+        columns:
+          - name: id
+            description: primary key for the dwt table 
+            data_tests:
+              - unique
+              - not_null
+              
+              
