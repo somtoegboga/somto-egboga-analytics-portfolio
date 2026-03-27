@@ -24,7 +24,7 @@ Hi, I'm Somto (pronounced: sum-toe). I combine **strategy and analytics skills**
 - User segmentation (RFM segmentaiton in dbt)
 - Correlation analysis and margin analysis (Python, Snowflake SQL) 
 - Actionable program recommendations to improve revenue
-**[View Project →](./feature-adoption-engagement)**
+**[View Project →](./payments-analytics-ai-case)**
 
 
 ## 📊 Dashboards & AI Insights
