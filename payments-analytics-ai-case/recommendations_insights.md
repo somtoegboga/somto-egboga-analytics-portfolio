@@ -10,13 +10,13 @@
 # Project Methodology
 ## 1. ELT (Extract, Load, Transform)
   - Extracted the data from [Kaggle](https://www.kaggle.com/datasets/harunrai/digital-wallet-transactions?resource=download)
-  - Pre-cleaned with Python using pandas to change data types, look for null or duplicated values
-  - Loaded data into Snowflake (created schema and uplaoded table to personal database)
-  - dbt transformations (created a master customer table that has user ids and their respective customer segmentation -        Champions: very loyal, high/good monetary value; Butterfly: not very loyal, high/good monetary value; Barnacles: very        loyal, low monetary value; Risky: not very oyal, low monetary value)
+  - Pre-cleaned with Python using pandas to change data types (transaction date from string to datetime), look for null or duplicated values
+  - Loaded data into Snowflake (created schema and uploadded table to personal database)
+  - dbt transformations & data engineering (Developed a Star Schema with a Master Customer dimension (including RFM scores)     - Champions: very loyal, high/good monetary value; Butterfly: not very loyal, high/good monetary value; Barnacles: very      loyal, low monetary value; Risky: not very oyal, low monetary value) and a Transactions fact table to enable high-           performance margin analysis.
 ## 2. EDA
-  - Correlation analysis in Python to see which categorical variables (payment method, device type, location, merchant) give us insight into failure propensity.
-  - Found that device type is correlated to transaction status (failure/success) as it had a p-value < 0.05 (0.022) while the other variables had p-values > 0.05.
-  - Also did a correlation analysis of cashback, loyalty and transaction volume and found that both cashback and loyalty points were positively correlated with transaction volume as we'd expect.
+  - Statistical & correlation analysis in Python to see which categorical variables (payment method, device type, location, merchant) give us insight into failure propensity. Conducted hypothesis testing in Python (p-values < 0.05) to prove that device_type was the primary driver of transaction failure, debunking assumptions that location or merchant were the main causes.
+      - Found that device type is correlated to transaction status (failure/success) as it had a p-value < 0.05 (0.022)             while the other variables had p-values > 0.05.
+      - Also did a correlation analysis of cashback, loyalty and transaction volume and found that both cashback and loyalty        points were positively correlated with transaction volume as we'd expect.
 ## 3. Data Analysis
   - Revenue analysis to see what the net revenue was from the program. Net revenue calculated as (fees - cashback).
   - ROI analysis for merchants and products. ROI caluclated as (net revenue/cashback)
