@@ -28,11 +28,9 @@ Hi, I'm Somto (pronounced: sum-toe). I combine **strategy and analytics skills**
 
 
 ## 📊 Dashboards & AI Insights
-![Feature Adoption Dashboard](./feature-adoption-engagement/dashboard_screenshots/feature_adoption_dashboard.png)  
+![Digital Wallets Insights Dashboard](./payments-analytics-ai-case/dashboard_screenshots/)  
 *Example dashboard: Feature adoption & retention analysis*
 
-![Marketplace Growth Dashboard](./marketplace-growth-retention/dashboard_screenshots/marketplace_dashboard.png)  
-*Example dashboard: Churn prediction & customer segmentation*
 
 ---
 
