@@ -35,4 +35,4 @@ Hi, I'm Somto (pronounced: sum-toe). I combine **strategy and analytics skills**
 ---
 
 ## 📫 Connect with Me
-[LinkedIn](www.linkedin.com/in/somto-egboga) | [Email](egbogasomto@gmail.com) | [GitHub](#)
+[LinkedIn](https://www.linkedin.com/in/somto-egboga) | [Email](egbogasomto@gmail.com) | [GitHub](#)
