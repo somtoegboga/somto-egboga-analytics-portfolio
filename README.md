@@ -27,7 +27,7 @@ Hi, I'm Somto (pronounced: sum-toe). I combine **strategy and analytics skills**
 **[View Project →](./payments-analytics-ai-case)**
 
 
-## 📊 Dashboards & AI Insights
+## 📊 Dashboard Insights
 ![Digital Wallets Insights Dashboard](./payments-analytics-ai-case/dashboard-screenshots/)  
 *Example dashboard: Customer Segmentation & Opportunity Discovery*
 
