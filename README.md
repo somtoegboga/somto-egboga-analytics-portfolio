@@ -8,9 +8,9 @@ Hi, I'm Somto (pronounced: sum-toe). I combine **strategy and analytics skills**
 ---
 
 ## 🛠 Skills
-**Programming & Analytics:** Python (pandas, numpy, scikit learn), SQL, dbt, Snowflake, Google Analytics
-**AI & ML:** Regression, A/B Testing
-**Product & Business:** Figma, RFM Customer Segmentation, Root cause analysis, Feature Prioritization, KPI/Metric Definition, Product Roadmaps, Product/Business Insights & Recommendations, QA & Usability Testing 
+**Programming & Analytics:** Python (pandas, numpy, scikit learn), SQL, dbt, Snowflake, Google Analytics                            
+**AI & ML:** Regression, A/B Testing                                                     
+**Product & Business:** Figma, RFM Customer Segmentation, Root cause analysis, Feature Prioritization, KPI/Metric Definition, Product Roadmaps, Product/Business Insights & Recommendations, QA & Usability Testing                     
 **Visualization:** Tableau, Power BI, matplotlib, seaborn  
 
 ---
